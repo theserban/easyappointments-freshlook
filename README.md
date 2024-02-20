@@ -1,37 +1,17 @@
-<h1 align="center">
-    <br>
-    <a href="https://easyappointments.org">
-        <img src="https://raw.githubusercontent.com/alextselegidis/easyappointments/develop/logo.png" alt="Easy!Appointments" width="150">
-    </a>
-    <br>
-    Easy!Appointments
-    <br>
-</h1>
+<h2 align="left">
+This is a new look for Easy Appointments created by myself and Tudor Stan.
+</h2>
 
-<br>
+Before
 
-<h4 align="center">
-    A powerful Open Source Appointment Scheduler that can be installed on your server. 
-</h4>
+<img width="400" alt="Zunego Screen 14" src="https://github.com/theserban/easyappointments-freshlook/assets/134176220/ebdc298b-1bdd-45d2-b233-fc1f8746bb39">
+<img width="400" alt="Zunego Screen 16" src="https://github.com/theserban/easyappointments-freshlook/assets/134176220/75ec6ac9-0052-45d1-a06f-00280fb17d57">
 
-<p align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/alextselegidis/easyappointments?style=for-the-badge">
-  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alextselegidis/easyappointments?style=for-the-badge">
-  <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/alextselegidis/easyappointments/total?style=for-the-badge">
-  <a href="https://discord.com/invite/UeeSkaw">
-    <img alt="Chat On Discord" src="https://img.shields.io/badge/chat-on%20discord-7289da?style=for-the-badge&logo=discord&logoColor=white">
-  </a>
-</p>
+After
 
-<p align="center">
-  <a href="#about">About</a> •
-  <a href="#features">Features</a> •
-  <a href="#setup">Setup</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#license">License</a>
-</p>
+<img width="400" alt="Zunego Screen 13" src="https://github.com/theserban/easyappointments-freshlook/assets/134176220/2b8df2c6-d204-4eaa-8a1b-26c4ebba6484">
+<img width="400" alt="Zunego Screen 15" src="https://github.com/theserban/easyappointments-freshlook/assets/134176220/58b5090f-b228-47bd-830a-c079779e5018">
 
-![screenshot](screenshot.png)
 
 ## About
 
@@ -98,14 +78,3 @@ and help the development progress.
 ## License 
 
 Code Licensed Under [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) | Content Under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
-
----
-
-Website [alextselegidis.com](https://alextselegidis.com) &nbsp;&middot;&nbsp;
-GitHub [alextselegidis](https://github.com/alextselegidis) &nbsp;&middot;&nbsp;
-Twitter [@alextselegidis](https://twitter.com/AlexTselegidis)
-
-###### More Projects On Github
-###### ⇾ [Plainpad &middot; Self Hosted Note Taking App](https://github.com/alextselegidis/plainpad)
-###### ⇾ [Questionful &middot; Web Questionnaires Made Easy](https://github.com/alextselegidis/questionful)
-###### ⇾ [Integravy &middot; Service Orchestration At Your Fingertips](https://github.com/alextselegidis/integravy)
