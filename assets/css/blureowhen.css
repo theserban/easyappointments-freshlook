@@ -1,0 +1,731 @@
+:root {
+    --trans-3: .3s ease-out;
+    --trans-1: .1s ease-out;
+    --shadow-bottom: 0 17px 23px -13px rgba(0,0,0,0.05);
+    --shadow-top: 0 -17px 23px -13px rgba(0,0,0,0.05);
+    --shadow-top-left: -17px -17px 23px -13px rgba(0,0,0,0.05);
+    --shadow-around: 0 0 17px 0 rgba(0,0,0,0.05);
+    --header-padding: calc(100vw - 1300px);
+    --accent-1: #3157dd;
+    --accent-2: #498bea;
+    --contrast-1: #101010;
+    --contrast-2: #353535;
+    --contrast-3: #6a6a6a;
+    --contrast-4: #bebebe;
+    --contrast-5: #e7e7e7;
+    --base-1: #ffffff;
+    --base-2: #dee4f9;
+    --base-3: #fafafa;
+    --base-4: #edf1fc;
+    --base-5: #e8edfc;
+    --yellow: #fef8d1;
+    --yellow-s: #e0d4ad;
+    --blue: #e4e9f5;
+    --blue-s: #c1cadb;
+    --green: #deeed5;
+    --green-s: #a6b197;
+    --green-h: #f0f7ec;
+    --purple: #e4e0f0;
+    --purple-s: #9999cb;
+    --purple-h: #f2f0f8;
+    --red: #fde0dd;
+    --red-s: #e8babb;
+    --deep-orange: #fdddcf;
+    --deep-orange-s: #e5bdb3;
+    --pink: #f8e4ef;
+    --pink-s: #e1c3d7;
+    --brown: #e8e3dd;
+    --brown-s: #ceccc7;
+    --cyan: #d5e9f6;
+    --cyan-s: #b1ccdc;
+    --cyan-h: #ecf5fb;
+    --grey: #ffffff;
+    --grey-s: #eaeaea;
+    --dark-grey: #f2f2f3;
+    --dark-grey-s: #c6c6c5;
+    --light-green: #e9f5f1;
+    --light-green-s: #abcdbf;
+    --lime: #edf2c8;
+    --lime-s: #d3d1a8;
+    --amber: #fcefd1;
+    --amber-s: #d7caa3;
+    --amber-h: #fef7ea;
+    --orange: #feeae0;
+    --orange-s: #e1c2b5;
+    --orange-h: #fff5f0;
+    --teal: #e9f6fc;
+    --teal-s: #b8d4d8;
+    --teal-h: #f5fbfe;
+    --error: #ff6666;
+    --error-s: #731012;
+    --error-h: #f4857e;
+    --link-color-primary: #bebebe;
+    --link-color-hover: #5a589f;
+    --mail-font-family: 'Montserrat', sans-serif;
+}
+
+/* =================================================================================================== */
+/* ============================================ BACKEND ============================================== */
+/* =================================================================================================== */
+
+#header .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--contrast-1);
+    padding: 13px 15px;
+    font-weight: 300;
+}
+
+#header {
+    background-color: var(--base-1);
+    box-shadow: 0 0 23px rgba(0,0,0,0.05);
+    border-radius: 0;
+    padding: 0 17px;
+    border-bottom: 1px solid var(--contrast-5);
+}
+
+#header .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--contrast-1);
+    padding: 13px 15px;
+    font-weight: 300;
+}
+
+#header #header-menu .nav-item.active {
+    background: var(--base-1);
+}
+
+#header #header-menu .nav-item.active a.nav-link {
+    color: var(--accent-1);
+}
+
+#header #header-menu .nav-item:hover {
+    background: var(--base-1);
+}
+
+#header #header-menu .nav-item:hover a.nav-link {
+    color: var(--accent-1);
+}
+
+#calendar-page #calendar-toolbar {
+    margin-bottom: 15px;
+    color: white;
+    background: var(--base-1);
+    padding: 15px 0;
+}
+
+.backend-page .filter-records form .key {
+    margin-right: 5px;
+    border-radius: 7px;
+    float: left;
+}
+
+#calendar-page #calendar-actions .btn {
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 0;
+}
+
+#calendar-page #calendar .fc-unavailable {
+    background-image: none;
+}
+
+
+
+/* =================================================================================================== */
+/* ============================================ GENERAL ============================================== */
+/* =================================================================================================== */
+
+/* ----------------------------------------- TYPE --------------------------------------- */
+#service-description strong {
+    font-weight: 600 !important;
+}
+
+span ~ span {
+    display: none;
+    color: var(--contrast-4);
+}
+
+p > span {
+    display: unset;
+    color: var(--contrast-1) !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: none;
+}
+
+strong {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* ----------------------------------------- LOGO --------------------------------------- */
+#book-appointment-wizard #company-name {
+    float: left;
+}
+
+#company-name img {
+    height: 40px;
+}
+
+/* ----------------------------------------- WIZARD --------------------------------------- */
+
+
+#book-appointment-wizard #service-description {
+    max-height: unset;
+}
+
+#book-appointment-wizard {
+    max-width: 600px;
+  	height: fit-content;
+    max-height: fit-content;
+    box-shadow: var(--shadow-around);
+    border: 1px solid var(--contrast-5);
+    border-radius: 17px;
+    margin-top: 40px;
+    margin-bottom: unset;
+}
+
+@media (max-width: 768px) {
+    #book-appointment-wizard {
+        max-width: unset;
+        max-height: fit-content;
+        box-shadow: unset;
+        border: unset;
+        border-radius: 17px;
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+}
+
+.col {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#book-appointment-wizard .wizard-frame .frame-container {
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: unset;
+}
+
+.col-lg-6 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;    
+}
+
+
+/* ================================================================================================== */
+/* ============================================ HEADER ============================================== */
+/* ================================================================================================== */
+
+#book-appointment-wizard #header {
+    background: var(--base-1);
+    border: unset;
+    box-shadow: unset;
+}
+
+#book-appointment-wizard .frame-container .frame-title {
+    font-weight: 400;
+    color: var(--contrast-4);
+    font-size: 1.75rem;
+}
+
+@media (min-width: 768px) {
+    #book-appointment-wizard .frame-container .frame-title {
+        padding-top: 107px;
+}
+}
+
+#book-appointment-wizard #header {
+    max-width: 712px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+/* ================================================================================================= */
+/* ============================================ STEPS ============================================== */
+/* ================================================================================================= */
+
+#book-appointment-wizard #steps {
+    float: right;
+    width: unset;
+}
+
+/* ----------------------------------------- GENERAL STEP --------------------------------------- */
+#book-appointment-wizard .book-step {
+    border-radius: 7px;
+}
+
+#book-appointment-wizard .book-step strong {
+    font-weight: 600;
+}
+
+/* ----------------------------------------- ACTIVE STEP --------------------------------------- */
+#book-appointment-wizard .active-step {
+    background: var(--accent-1);
+    border: solid 0.5px var(--accent-1);
+}
+
+@media (max-width:768px) {
+    #book-appointment-wizard .active-step {
+        margin: unset;
+    }
+}
+
+#book-appointment-wizard .active-step strong {
+    color: var(--base-1);
+    font-weight: 600;
+}
+
+/* ----------------------------------------- INACTIVE STEP --------------------------------------- */
+
+#book-appointment-wizard .book-step:not(.active-step) {
+    background: var(--base-1);
+    border: solid 0.5px var(--contrast-5);
+}
+
+#book-appointment-wizard .book-step:not(.active-step) strong {
+    color: var(--accent-1);
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    #book-appointment-wizard .book-step:not(.active-step) {
+        display: none;
+    }
+
+    #book-appointment-wizard .active-step {
+        float: right;
+    }
+}
+
+/* =================================================================================================== */
+/* ============================================ BUTTONS ============================================== */
+/* =================================================================================================== */
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: var(--accent-2) !important;
+    border-color: var(--accent-2) !important;
+    box-shadow: none !important;
+}
+
+.btn-success:focus, .btn-success.focus {
+    color: #fff;
+    background-color: var(--accent-2) !important;
+    border-color: var(--accent-2) !important;
+    box-shadow: none !important;
+}
+
+#book-appointment-wizard .btn-dark.focus, #book-appointment-wizard .btn-dark:focus {
+    color: var(--accent-1);
+    background: var(--base-1);
+    border-color: var(--accent-1);
+}
+
+.btn-outline-secondary.focus, .btn-outline-secondary:focus {
+    box-shadow: none !important;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+    color: var(--accent-1);
+    background: var(--base-2);
+    border-color: var(--accent-1);
+    box-shadow: none !important;
+}
+
+.btn-success.focus, .btn-success:focus {
+    box-shadow: unset !important;
+}
+
+#book-appointment-wizard .wizard-frame .command-buttons .btn {
+    padding: 7px 30px 7px 30px;
+    border-radius: 7px;
+    min-width: unset;
+}
+
+.btn-dark {
+    background-color: var(--accent-1);
+    color: var(--base-1);
+    border: solid 1px var(--accent-1);
+}
+
+.btn-dark:hover {
+    color: var(--accent-1);
+    background-color: var(--base-1);
+    border: solid 1px var(--accent-1);
+}
+
+.btn-success {
+    color: var(--base-1);
+    background-color: var(--accent-2);
+    border-color: var(--accent-2);
+}
+
+.btn-success:hover {
+    color: var(--accent-2);
+    background-color: var(--base-1);
+    border-color: var(--accent-2);
+}
+
+/* ===================================================================================================== */
+/* ============================================ SELECTORS ============================================== */
+/* ===================================================================================================== */
+
+#book-appointment-wizard #wizard-frame-1 select {
+    appearance: none;
+    border: solid 1px var(--contrast-5);
+    border-radius: 7px;
+}
+
+#book-appointment-wizard #select-timezone {
+    appearance: none;
+    border: solid 1px var(--contrast-5);
+    border-radius: 7px;
+    margin-bottom: unset;
+}
+
+/* =================================================================================================== */
+/* ============================================ CALENDAR ============================================= */
+/* =================================================================================================== */
+
+body .ui-datepicker .ui-widget-header .ui-icon {
+    filter: brightness(0.1) invert(0.2) sepia(.9) hue-rotate(206deg) saturate(300%);
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    transition: ease-out .3s;
+    top: .7em;
+    width: 1.7em;
+    height: 1.7em;
+    border: solid 1px var(--contrast-5);
+    background: var(--base-1);
+    border-radius: 7px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 7px;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 7px;
+}
+
+body .ui-datepicker .ui-datepicker-next-hover {
+    transition: ease-out .3s !important;
+    top: .7em !important;
+    right: 7px !important; 
+    background: var(--base-2) !important;
+    border: solid 1px var(--accent-1) !important;
+    border-radius: 7px !important;
+}
+
+
+body .ui-datepicker .ui-datepicker-prev-hover {
+    transition: ease-out .3s !important;
+    top: .7em !important;
+    left: 7px !important; 
+    background: var(--base-2) !important;
+    border: solid 1px var(--accent-1) !important;
+    border-radius: 7px !important;
+}
+
+.col-12 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#book-appointment-wizard .wizard-frame #select-date {
+    max-width: unset;
+    margin: auto;
+    padding-top: unset;
+    padding-bottom: 10px;
+}
+
+body .ui-widget.ui-widget-content {
+    border: unset;
+}
+
+.ui-widget.ui-widget-content {
+    border: unset;
+}
+
+.ui-widget-content {
+    border: unset;
+}
+
+body .ui-datepicker {
+    width: unset;
+    max-width: 350px;
+}
+
+body .ui-datepicker .ui-widget-header {
+    box-shadow: 0px 17px 17px -13px rgba(0, 0, 0, .07);
+    border-bottom: solid 1px var(--contrast-5);
+    background-color: var(--base-1);
+    border-radius: 0px;
+}
+
+body .ui-datepicker .ui-datepicker-title {
+    color: var(--accent-1);
+}
+
+body .ui-datepicker td a, body .ui-datepicker td span {
+    color: var(--accent-1) !important;
+}
+
+body .ui-datepicker th {
+    background: var(--base-1);
+    color: var(--accent-1);
+}
+
+.ui-datepicker table {
+    width: 100%;
+    display: table;
+}
+
+/* ----------------------------------------- DISABLED DAY --------------------------------------- */
+
+body .ui-datepicker td a, body .ui-datepicker td span {
+    color: var(--contrast-5); !important;
+    width: 35px;
+    height: 35px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* ----------------------------------------- ANY DAY --------------------------------------- */
+
+.ui-datepicker-year {
+    color: var(--accent-1);
+}
+
+body .ui-datepicker td a {
+    border: solid 1px var(--base-1) !important;
+    background: unset !important;
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 7px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+body .ui-datepicker td a:hover {
+    transition: ease-out 0.3s;
+    border: solid 1px var(--contrast-5) !important;
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 7px !important;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* ----------------------------------------- CURRENT DAY --------------------------------------- */
+
+body .ui-datepicker td a.ui-state-highlight {
+    background: unset !important;
+    color: var(--accent-1) !important;
+    border: solid 1px var(--accent-1) !important;
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 7px !important;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* ----------------------------------------- SELECTIED DATE --------------------------------------- */
+
+html body .ui-datepicker td a.ui-state-active {
+    color: var(--base-1); !important;
+    font-weight: 600 !important;
+    background: var(--accent-1) !important;
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 7px !important;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* =================================================================================================== */
+/* ============================================== HOURS ============================================== */
+/* =================================================================================================== */
+
+#book-appointment-wizard #available-hours {
+    display: flex;
+    margin: 10px 0;
+    padding: 5px 15px 5px 15px;
+    column-gap: 10px;
+    border-right: solid 1px var(--contrast-5);
+    border-left: solid 1px var(--contrast-5);
+    box-shadow: inset 17px 0px 17px -23px rgba(0, 0, 0, 0.13), inset -17px 0px 17px -23px rgba(0, 0, 0, 0.13);
+}
+
+#book-appointment-wizard .wizard-frame #select-time {
+    max-width: unset;
+    margin: auto;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: unset;
+}
+
+#book-appointment-wizard #available-hours .available-hour {
+    margin-bottom: unset;
+}
+
+.btn-block + .btn-block {
+    margin: unset;
+}
+
+#book-appointment-wizard #available-hours .selected-hour {
+    background-color: var(--accent-1);
+    border-color: var(--accent-1);
+    color: white;
+    border-radius: 7px;
+    padding: 7px 30px 7px 30px;
+}
+
+.btn-outline-secondary {
+    transition: ease-out 0.3s;
+    color: var(--accent-1);
+    border-color: var(--contrast-5);
+    border-radius: 7px;
+    padding: 7px 30px 7px 30px;
+}
+
+.btn-outline-secondary:hover {
+    transition: ease-out 0.3s;
+    color: var(--accent-1);
+    border-color: var(--accent-1);
+    background-color: var(--base-2);
+    border-radius: 7px;
+    padding: 7px 30px 7px 30px;
+}
+
+.backend-page .popover-body .btn-outline-secondary {
+    border-radius: 4px;
+}
+
+.backend-page .popover-body .btn-outline-secondary:hover {
+    padding: 0 0.6em;
+    border-radius: 4px;
+}
+
+.btn-block {
+    display: flex;
+    min-width: 110px;
+    justify-content: center;
+    align-items: center;
+    width: unset;
+}
+
+/* =================================================================================================== */
+/* ============================================== FORM =============================================== */
+/* =================================================================================================== */
+
+.form-control {
+    margin-bottom: 1rem;
+    border: solid 1px var(--contrast-5);
+    border-radius: 7px;
+}
+
+@media (min-width:768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* ================================================================================================================ */
+/* ============================================== CONFIRMATION PAGE =============================================== */
+/* ================================================================================================================ */
+
+
+
+#message-frame #message-icon, #success-frame #success-icon {
+    padding-bottom: 10px;
+}
+
+.mt-2, .my-2 {
+    display: none;
+}
+
+.mt-auto, .my-auto {
+    margin-top: 25%!important;
+}
+
+.h3, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--contrast-4);
+    margin-bottom: 1.5rem;
+}
+
+#succes-frame, p:not(p+p){
+    margin-bottom: 0;
+}
+
+.border {
+    border: none!important;
+}
+
+#success-frame .btn {
+    margin: 5px;
+    width: unset;
+    max-width: unset;
+    padding: 7px 30px;
+    border-radius: 7px;
+}
+
+.btn-primary {
+    color: var(--base-1);
+    background-color: var(--accent-1);
+    border-color: var(--accent-1);
+}
+
+.btn-primary:hover {
+    color: var(--accent-1);
+    background-color: var(--base-1);
+    border-color: var(--accent-1);
+}
+
+
+/* ================================================================================================== */
+/* ============================================ FOOTER ============================================== */
+/* ================================================================================================== */
+
+#book-appointment-wizard #frame-footer {
+    display: none;
+}
+
+body {
+    border: none !important;
+    border-radius: none !important;
+}
